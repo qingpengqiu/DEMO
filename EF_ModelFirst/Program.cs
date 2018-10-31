@@ -10,7 +10,7 @@ namespace EF_ModelFirst
     {
         static void Main(string[] args)
         {
-            Console.Write("12");
+            Console.Write("FAILURE IS THE MOTHER OF SUCCESS");
         }
     }
 }
