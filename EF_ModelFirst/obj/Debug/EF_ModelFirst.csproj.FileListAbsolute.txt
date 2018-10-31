@@ -1,1 +1,11 @@
 E:\Qiuqp\Demo\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe.config
+D:\学习\DEMO\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe.config
+D:\学习\DEMO\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe
+D:\学习\DEMO\EF_ModelFirst\bin\Debug\EF_ModelFirst.pdb
+D:\学习\DEMO\EF_ModelFirst\bin\Debug\EntityFramework.dll
+D:\学习\DEMO\EF_ModelFirst\bin\Debug\EntityFramework.SqlServer.dll
+D:\学习\DEMO\EF_ModelFirst\bin\Debug\EntityFramework.xml
+D:\学习\DEMO\EF_ModelFirst\bin\Debug\EntityFramework.SqlServer.xml
+D:\学习\DEMO\EF_ModelFirst\obj\Debug\EF_ModelFirst.csprojResolveAssemblyReference.cache
+D:\学习\DEMO\EF_ModelFirst\obj\Debug\EF_ModelFirst.exe
+D:\学习\DEMO\EF_ModelFirst\obj\Debug\EF_ModelFirst.pdb

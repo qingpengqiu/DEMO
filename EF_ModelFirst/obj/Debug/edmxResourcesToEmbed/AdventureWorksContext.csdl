@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="AdventureWorksContext" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="AdventureWorksContextContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Order" EntityType="AdventureWorksContext.Order" />
+    <EntitySet Name="OrderDetail" EntityType="AdventureWorksContext.OrderDetail" />
+    <AssociationSet Name="OrderOrderDetail" Association="AdventureWorksContext.OrderOrderDetail">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer" Type="String" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="OrderDetail" Relationship="AdventureWorksContext.OrderOrderDetail" FromRole="Order" ToRole="OrderDetail" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product" Type="String" Nullable="false" />
+    <Property Name="UnitPrice" Type="String" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="AdventureWorksContext.OrderOrderDetail" FromRole="OrderDetail" ToRole="Order" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="OrderOrderDetail">
+    <End Type="AdventureWorksContext.Order" Role="Order" Multiplicity="1" />
+    <End Type="AdventureWorksContext.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
