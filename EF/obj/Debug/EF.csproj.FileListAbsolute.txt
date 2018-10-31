@@ -34,3 +34,4 @@ E:\Qiuqp\Demo\EF\bin\EntityFramework.dll
 E:\Qiuqp\Demo\EF\bin\EntityFramework.SqlServer.dll
 E:\Qiuqp\Demo\EF\bin\EntityFramework.xml
 E:\Qiuqp\Demo\EF\bin\EntityFramework.SqlServer.xml
+E:\Qiuqp\Demo\EF\obj\Debug\EF.csprojResolveAssemblyReference.cache

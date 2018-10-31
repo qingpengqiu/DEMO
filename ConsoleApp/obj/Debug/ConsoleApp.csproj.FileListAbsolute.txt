@@ -1,0 +1,10 @@
+E:\Qiuqp\Demo\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+E:\Qiuqp\Demo\ConsoleApp\bin\Debug\ConsoleApp.exe
+E:\Qiuqp\Demo\ConsoleApp\bin\Debug\ConsoleApp.pdb
+E:\Qiuqp\Demo\ConsoleApp\bin\Debug\EntityFramework.dll
+E:\Qiuqp\Demo\ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
+E:\Qiuqp\Demo\ConsoleApp\bin\Debug\EntityFramework.xml
+E:\Qiuqp\Demo\ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
+E:\Qiuqp\Demo\ConsoleApp\obj\Debug\ConsoleApp.exe
+E:\Qiuqp\Demo\ConsoleApp\obj\Debug\ConsoleApp.pdb
+E:\Qiuqp\Demo\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
