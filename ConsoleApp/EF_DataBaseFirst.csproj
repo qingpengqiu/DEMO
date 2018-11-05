@@ -95,6 +95,7 @@
       <DependentUpon>EFDemoDB.edmx</DependentUpon>
       <LastGenOutput>EFDemoDB.Context.cs</LastGenOutput>
     </Content>
+    <Content Include="EFDemoDB.edmx.sql" />
     <Content Include="EFDemoDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>EFDemoDB.edmx</DependentUpon>

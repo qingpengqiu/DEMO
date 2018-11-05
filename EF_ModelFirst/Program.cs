@@ -10,6 +10,16 @@ namespace EF_ModelFirst
     {
         static void Main(string[] args)
         {
+            AdventureWorksContextContainer OrderDB = new AdventureWorksContextContainer();
+
+            var theOrders = OrderDB.Order.OrderBy(m=>m.Id);
+            foreach (var item in theOrders)
+            {
+                Console.WriteLine(item.Id);
+                Console.WriteLine(item.Customer);
+                Console.WriteLine(item.OrderDate);
+            }
+            Console.ReadLine();
         }
     }
 }

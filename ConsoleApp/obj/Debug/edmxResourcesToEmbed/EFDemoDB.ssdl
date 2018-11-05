@@ -1,12 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="EFDemoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="Grade">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
-    <Property Name="GradeName" Type="varchar" MaxLength="50" />
-  </EntityType>
+<Schema Namespace="EFDemoModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EFDemoModelStoreContainer">
+    <EntitySet Name="Student" EntityType="EFDemoModel.Store.Student" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Grades" EntityType="EFDemoModel.Store.Grades" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
   <EntityType Name="Student">
     <Key>
       <PropertyRef Name="Id" />
@@ -14,10 +11,13 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Age" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Hobby" Type="nvarchar(max)" />
+    <Property Name="Hobby" Type="nvarchar(max)" Nullable="true" />
   </EntityType>
-  <EntityContainer Name="EFDemoModelStoreContainer">
-    <EntitySet Name="Grade" EntityType="Self.Grade" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
-  </EntityContainer>
+  <EntityType Name="Grades">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="GradeName" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
 </Schema>

@@ -2,20 +2,20 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="EFDemoModelStoreContainer" CdmEntityContainer="SchoolEntities">
     <EntitySetMapping Name="Student">
-      <EntityTypeMapping TypeName="EFDemoModel.Student">
+      <EntityTypeMapping TypeName="IsTypeOf(EFDemoModel.Student)">
         <MappingFragment StoreEntitySet="Student">
-          <ScalarProperty Name="Hobby" ColumnName="Hobby" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Hobby" ColumnName="Hobby" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Grades">
-      <EntityTypeMapping TypeName="EFDemoModel.Grade">
-        <MappingFragment StoreEntitySet="Grade">
-          <ScalarProperty Name="GradeName" ColumnName="GradeName" />
+      <EntityTypeMapping TypeName="IsTypeOf(EFDemoModel.Grade)">
+        <MappingFragment StoreEntitySet="Grades">
           <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GradeName" ColumnName="GradeName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
