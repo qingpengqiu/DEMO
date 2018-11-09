@@ -22,20 +22,38 @@ namespace EF_CodeFirst
                     //orderDBContext.SaveChanges();
 
 
-                    //var Grades = from grade in orderDBContext.Grades
+                    //var grades = from grade in orderDBContext.Grades
                     //             select grade;
 
-                    //foreach (var item in Grades)
+                    //foreach (var item in grades)
                     //{
-                    //    Console.WriteLine("GradeId:{0};GradeName:{1}", item.Id, item.GradeName);
+                    //    Console.WriteLine("gradeid:{0};gradename:{1}", item.Id, item.GradeName);
                     //}
 
-                    var Students = from student in orderDBContext.Student
+                    var Students = from student in orderDBContext.Students
                                    select student;
+
                     foreach (var item in Students)
                     {
                         Console.WriteLine("Id:{0};StudentName:{1};Age:{2};Hobby:{3}", item.Id, item.Name, item.Age, item.Hobby);
                     }
+
+                    //var DataList = from O in orderDBContext.Orders
+                    //               join D in orderDBContext.OrderDetails on O.Id equals D.OrderId
+                    //               into Order_Details
+                    //               from D in Order_Details
+                    //               where O.Id > 0
+                    //               select new OrderDetailView
+                    //               {
+                    //                   Customer = O.Customer,
+                    //                   Product = D.Product
+                    //               };
+
+                    //foreach (var item in DataList)
+                    //{
+                    //    Console.WriteLine("客户：{0}；产品：{1}", item.Customer, item.Product);
+                    //}
+
                     Console.ReadLine();
 
                 }

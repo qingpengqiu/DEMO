@@ -55,6 +55,7 @@
     <Compile Include="Model\Grade.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\OrderDetail.cs" />
+    <Compile Include="Model\OrderDetailView.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="OrderContext.cs" />
     <Compile Include="Program.cs" />

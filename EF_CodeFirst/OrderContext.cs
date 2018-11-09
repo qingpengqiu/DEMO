@@ -28,7 +28,7 @@ namespace EF_CodeFirst
 
         public DbSet<Grade> Grades { get; set; }
 
-        public DbSet<Student> Student { get; set; }
+        public DbSet<Student> Students { get; set; }
 
         
 
