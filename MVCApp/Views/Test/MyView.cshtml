@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+
+@using MVCApp.Models;
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body>
+    <div> 
+        @{ 
+            Employee employee = (Employee)ViewBag.employee;
+        }
+        <b>EmployDetails:</b><br />
+            EmplyeeName:@employee.FirstName @employee.SecondName<br />
+            Salary:@employee.Salary
+    </div>
+</body>
+</html>

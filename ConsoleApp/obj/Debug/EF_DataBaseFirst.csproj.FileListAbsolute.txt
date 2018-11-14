@@ -1,6 +1,3 @@
-E:\Qiuqp\Demo\ConsoleApp\bin\Debug\ConsoleApp.exe.config
-E:\Qiuqp\Demo\ConsoleApp\obj\Debug\ConsoleApp.exe
-E:\Qiuqp\Demo\ConsoleApp\obj\Debug\ConsoleApp.pdb
 D:\学习\DEMO\ConsoleApp\bin\Debug\ConsoleApp.exe.config
 D:\学习\DEMO\ConsoleApp\bin\Debug\ConsoleApp.exe
 D:\学习\DEMO\ConsoleApp\bin\Debug\ConsoleApp.pdb
@@ -11,6 +8,7 @@ D:\学习\DEMO\ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
 D:\学习\DEMO\ConsoleApp\obj\Debug\EF_DataBaseFirst.csprojResolveAssemblyReference.cache
 D:\学习\DEMO\ConsoleApp\obj\Debug\ConsoleApp.exe
 D:\学习\DEMO\ConsoleApp\obj\Debug\ConsoleApp.pdb
+E:\Qiuqp\Demo\ConsoleApp\bin\Debug\ConsoleApp.exe.config
 E:\Qiuqp\Demo\ConsoleApp\bin\Debug\ConsoleApp.exe
 E:\Qiuqp\Demo\ConsoleApp\bin\Debug\ConsoleApp.pdb
 E:\Qiuqp\Demo\ConsoleApp\bin\Debug\EntityFramework.dll
@@ -18,3 +16,5 @@ E:\Qiuqp\Demo\ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
 E:\Qiuqp\Demo\ConsoleApp\bin\Debug\EntityFramework.xml
 E:\Qiuqp\Demo\ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
 E:\Qiuqp\Demo\ConsoleApp\obj\Debug\EF_DataBaseFirst.csprojResolveAssemblyReference.cache
+E:\Qiuqp\Demo\ConsoleApp\obj\Debug\ConsoleApp.exe
+E:\Qiuqp\Demo\ConsoleApp\obj\Debug\ConsoleApp.pdb

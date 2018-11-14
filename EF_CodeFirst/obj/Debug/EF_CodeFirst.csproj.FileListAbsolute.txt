@@ -8,8 +8,6 @@ D:\学习\DEMO\EF_CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
 D:\学习\DEMO\EF_CodeFirst\bin\Debug\EntityFramework.xml
 D:\学习\DEMO\EF_CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
 E:\Qiuqp\Demo\EF_CodeFirst\bin\Debug\EF_CodeFirst.exe.config
-E:\Qiuqp\Demo\EF_CodeFirst\obj\Debug\EF_CodeFirst.exe
-E:\Qiuqp\Demo\EF_CodeFirst\obj\Debug\EF_CodeFirst.pdb
 E:\Qiuqp\Demo\EF_CodeFirst\bin\Debug\EF_CodeFirst.exe
 E:\Qiuqp\Demo\EF_CodeFirst\bin\Debug\EF_CodeFirst.pdb
 E:\Qiuqp\Demo\EF_CodeFirst\bin\Debug\EntityFramework.dll
@@ -17,3 +15,5 @@ E:\Qiuqp\Demo\EF_CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
 E:\Qiuqp\Demo\EF_CodeFirst\bin\Debug\EntityFramework.xml
 E:\Qiuqp\Demo\EF_CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
 E:\Qiuqp\Demo\EF_CodeFirst\obj\Debug\EF_CodeFirst.csprojResolveAssemblyReference.cache
+E:\Qiuqp\Demo\EF_CodeFirst\obj\Debug\EF_CodeFirst.exe
+E:\Qiuqp\Demo\EF_CodeFirst\obj\Debug\EF_CodeFirst.pdb

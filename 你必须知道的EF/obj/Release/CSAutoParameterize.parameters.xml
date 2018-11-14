@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Default-Web.config Connection String" description="Default 由应用程序在 web.config 中用来访问数据库的连接字符串。" defaultValue="Data Source=.;Initial Catalog=ZpTempTest;User ID=sa;Password=sa;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\项目\\个人学习\\Demo\\test\\MvcApplication3\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Default']/@connectionString" />
+  </parameter>
+  <parameter name="Default_DatabasePublish-Web.config Connection String" description="Default_DatabasePublish 由应用程序在 web.config 中用来访问数据库的连接字符串。" defaultValue="Default_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\项目\\个人学习\\Demo\\test\\MvcApplication3\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Default_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>
