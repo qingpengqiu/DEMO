@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVCApp.Models;
+using MVCApp.ViewModels;
 
 namespace MVCApp.Controllers
 {
@@ -26,12 +27,25 @@ namespace MVCApp.Controllers
             Employee employee = new Employee();
             employee.FirstName = "Michel";
             employee.SecondName = "Jorden";
-            employee.Salary = 1000000;
+            employee.Salary = 10000;
+            //传递到ViewData中的值，在View中可以用ViewBag获取，反之亦然
+            EmployeeViewModel VMEmployee = new EmployeeViewModel();
+            VMEmployee.EmployeeName = employee.FirstName + employee.SecondName;
+            VMEmployee.Salary = employee.Salary;
+            if (employee.Salary>15000)
+            {
+                VMEmployee.SalaryColor = "yellow";
+            }
+            else
+            {
+                VMEmployee.SalaryColor = "green";
+            }
+            VMEmployee.UserName = "Admin";
             ViewData["employee"] = employee;
             ViewBag.employee = employee;
 
 
-            return View("MyView");
+            return View("MyView", VMEmployee);
         }
         /// <summary>
         /// 返回字符串类型，纯文本
@@ -44,5 +58,7 @@ namespace MVCApp.Controllers
 
             return content;
         }
+
+       
     }
 }

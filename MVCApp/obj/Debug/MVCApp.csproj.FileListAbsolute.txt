@@ -43,5 +43,5 @@ E:\Qiuqp\Demo\MVCApp\bin\AutoMapper.EF6.dll
 E:\Qiuqp\Demo\MVCApp\bin\DelegateDecompiler.dll
 E:\Qiuqp\Demo\MVCApp\bin\DelegateDecompiler.EntityFramework.dll
 E:\Qiuqp\Demo\MVCApp\bin\Mono.Reflection.dll
-E:\Qiuqp\Demo\MVCApp\obj\Debug\MVCApp.csprojResolveAssemblyReference.cache
 E:\Qiuqp\Demo\MVCApp\bin\System.Linq.Dynamic.dll
+E:\Qiuqp\Demo\MVCApp\obj\Debug\MVCApp.csprojResolveAssemblyReference.cache

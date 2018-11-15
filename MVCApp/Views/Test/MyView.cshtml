@@ -2,8 +2,9 @@
     Layout = null;
 }
 
-@using MVCApp.Models;
+@using MVCApp.ViewModels;
 
+@model EmployeeViewModel
 
 <!DOCTYPE html>
 
@@ -14,12 +15,10 @@
 </head>
 <body>
     <div> 
-        @{ 
-            Employee employee = (Employee)ViewBag.employee;
-        }
         <b>EmployDetails:</b><br />
-            EmplyeeName:@employee.FirstName @employee.SecondName<br />
-            Salary:@employee.Salary
-    </div>
+                <span style="background-color:@Model.SalaryColor">
+                   EmploySalary:@Model.Salary.ToString("C")
+                </span>
+
 </body>
 </html>
