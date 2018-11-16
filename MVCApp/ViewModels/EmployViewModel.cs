@@ -12,7 +12,5 @@ namespace MVCApp.ViewModels
         public int Salary { get; set; }
 
         public string SalaryColor { get; set; }
-
-        public string UserName { get; set; }
     }
 }   

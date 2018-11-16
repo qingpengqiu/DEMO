@@ -6,7 +6,7 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using MVCApp.Models;
 
-namespace MVCApp
+namespace MVCApp.DAL
 {
     public class SchoolDB : DbContext
     {
@@ -25,5 +25,7 @@ namespace MVCApp
         public DbSet<Student> Students { get; set; }
 
         public DbSet<Score> Scores { get; set; }
+
+        public DbSet<Employee> Employees { get; set; }
     }
 }

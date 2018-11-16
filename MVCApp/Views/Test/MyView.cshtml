@@ -4,7 +4,7 @@
 
 @using MVCApp.ViewModels;
 
-@model EmployeeViewModel
+@model EmployeeListViewModel
 
 <!DOCTYPE html>
 
@@ -15,10 +15,21 @@
 </head>
 <body>
     <div> 
-        <b>EmployDetails:</b><br />
-                <span style="background-color:@Model.SalaryColor">
-                   EmploySalary:@Model.Salary.ToString("C")
-                </span>
+        <strong>Hello! @Model.UserName</strong>
+        <table>
+            <tr>
+                <th>EmployeeName</th>
+                <th>Salary</th>
+            </tr>
+            @foreach (EmployeeViewModel employee in Model.Employees)
+            {
+                <tr>
+                    <td>@employee.EmployeeName</td>
+                    <td style="background-color:@employee.SalaryColor">@employee.Salary</td>
+                </tr>
+            }
 
+        </table>
+    </div>
 </body>
 </html>

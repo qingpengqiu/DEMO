@@ -9,6 +9,7 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using AutoMapper.Configuration;
 using MVCApp.Models;
+using MVCApp.DAL;
 
 
 namespace MVCApp.Controllers

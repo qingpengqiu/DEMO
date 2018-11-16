@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using MVCApp.Models;
 using MVCApp.ViewModels;
+using MVCApp.BLL;
 
 namespace MVCApp.Controllers
 {
@@ -22,30 +23,33 @@ namespace MVCApp.Controllers
             return "I am not a Action Method";
         }
         // GET: Test
-        public ActionResult Index()
+        public ActionResult MyView()
         {
-            Employee employee = new Employee();
-            employee.FirstName = "Michel";
-            employee.SecondName = "Jorden";
-            employee.Salary = 10000;
             //传递到ViewData中的值，在View中可以用ViewBag获取，反之亦然
-            EmployeeViewModel VMEmployee = new EmployeeViewModel();
-            VMEmployee.EmployeeName = employee.FirstName + employee.SecondName;
-            VMEmployee.Salary = employee.Salary;
-            if (employee.Salary>15000)
+            IList<Employee> Employees = new EmployeeBusinessLayer().GetEmployees();
+            IList<EmployeeViewModel> EmployeeViewModels = new List<EmployeeViewModel>();
+            foreach (var employee in Employees)
             {
-                VMEmployee.SalaryColor = "yellow";
+                EmployeeViewModel employeeViewModel = new EmployeeViewModel();
+                employeeViewModel.EmployeeName = employee.FirstName + employee.SecondName;
+                employeeViewModel.Salary = employee.Salary;
+                if (employee.Salary > 15000)
+                {
+                    employeeViewModel.SalaryColor = "yellow";
+                }
+                else
+                {
+                    employeeViewModel.SalaryColor = "green";
+                }
+                EmployeeViewModels.Add(employeeViewModel);
             }
-            else
-            {
-                VMEmployee.SalaryColor = "green";
-            }
-            VMEmployee.UserName = "Admin";
-            ViewData["employee"] = employee;
-            ViewBag.employee = employee;
+            EmployeeListViewModel employeeListViewModel = new EmployeeListViewModel();
+            employeeListViewModel.Employees = EmployeeViewModels;
+            employeeListViewModel.UserName = "Admin";
 
+            
 
-            return View("MyView", VMEmployee);
+            return View("MyView", employeeListViewModel);
         }
         /// <summary>
         /// 返回字符串类型，纯文本
