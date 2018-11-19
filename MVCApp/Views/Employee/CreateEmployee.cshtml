@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateEmployee</title>
+</head>
+<body>
+    <div>
+        <form action="/Employee/SaveEmployee" method="post">
+            First Name: <input type="text" id="txtFname" name="FirstName" value="" /><br />
+            <sapn style="color:red">@Html.ValidationMessage("FirstName")</sapn><br />
+            Last Name: <input type="text" id="txtLname" name="SecondName" value="" /><br />
+            <sapn style="color:red">@Html.ValidationMessage("SecondName")</sapn><br />
+            Salary: <input type="text" id="txtSalary" name="Salary" value="" /><br />
+            @Html.ValidationMessage("Salary")<br />
+            <input type="submit" name="BtnSave" value="Save Employee" />
+            <input type="reset" name="BtnReset" value="Reset" />
+</form> 
+    </div>
+</body>
+</html>

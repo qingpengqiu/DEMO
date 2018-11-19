@@ -1,0 +1,32 @@
+﻿@using MVCApp.ViewModels
+
+@model EmployeeListViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <strong>Hello! @Model.UserName</strong>
+        <a href="/Employee/AddNew">Add New</a>
+        <table>
+            <tr>
+                <th>EmployeeName</th>
+                <th>Salary</th>
+            </tr>
+            @foreach (EmployeeViewModel employee in Model.Employees)
+            {
+                <tr>
+                    <td>@employee.EmployeeName</td>
+                    <td style="background-color:@employee.SalaryColor">@employee.Salary</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</body>
+</html>
